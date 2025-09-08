@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CountNumber from './Bai1/CountNumber';
+import TodoList from './Bai2/TodoList';
+import ChangeColor from './Bai3/ChangeColor';
+import StudentCard from './Bai4/StudentCard';
+import Clock from './Bai5/Clock';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Bài 1: Ứng dụng Đếm số</h1>
+      <CountNumber />
+      <h1>Bài 2: Danh sách công việc</h1>
+      <TodoList />
+      <h1>Bài 3: Ứng dụng đổi màu nền</h1>
+      <ChangeColor />
+      <h1>Bài 4: Thẻ thông tin sinh viên</h1>
+      <StudentCard />
+      <h1>Bài 5: Đồng hồ</h1>
+      <Clock />
     </div>
   );
 }
